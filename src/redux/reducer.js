@@ -48,13 +48,7 @@ const businessReducers = (state = initialState, action) => {
         loading: false,
       };
 
-    // case FILTER_BUSINESSES:
-    //   return {
-    //     ...state,
-    //     business: action.payload,
-    //     sorting: action.payload.sorting,
-    //     loading: false,
-    //   };
+    
     default:
       return state;
   }
