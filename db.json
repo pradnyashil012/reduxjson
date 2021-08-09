@@ -1,0 +1,46 @@
+{
+  "business": [
+    {
+      "id": 1,
+      "name": "Cricket",
+      "sorting": "Featured",
+      "followers": "350Cr"
+    },
+    {
+      "id": 2,
+      "name": "Hockey",
+      "sorting": "Trending",
+      "followers": "50Cr"
+    },
+    {
+      "name": "Naayab Sports",
+      "sorting": "Newest",
+      "followers": "1000",
+      "id": 3
+    },
+    {
+      "name": "Naayab Originals",
+      "sorting": "Recommended",
+      "followers": "3000",
+      "id": 4
+    },
+    {
+      "name": "Freepostseo",
+      "sorting": "Featured",
+      "followers": "1000",
+      "id": 5
+    },
+    {
+      "name": "Naayab.com",
+      "sorting": "Trusted",
+      "followers": "2000000",
+      "id": 6
+    },
+    {
+      "name": "Amazon",
+      "sorting": "Recommended",
+      "followers": "100Cr",
+      "id": 8
+    }
+  ]
+}
