@@ -4,19 +4,13 @@
       "id": 1,
       "name": "Cricket",
       "sorting": "Featured",
-      "followers": "350Cr"
+      "followers": "380Cr"
     },
     {
       "id": 2,
       "name": "Hockey",
       "sorting": "Trending",
       "followers": "50Cr"
-    },
-    {
-      "name": "Naayab Sports",
-      "sorting": "Newest",
-      "followers": "1000",
-      "id": 3
     },
     {
       "name": "Naayab Originals",
@@ -41,6 +35,18 @@
       "sorting": "Recommended",
       "followers": "100Cr",
       "id": 8
+    },
+    {
+      "name": "McDonald",
+      "sorting": "Featured",
+      "followers": "10000000",
+      "id": 9
+    },
+    {
+      "name": "Bollywood",
+      "sorting": "Featured",
+      "followers": "500Cr",
+      "id": 10
     }
   ]
 }

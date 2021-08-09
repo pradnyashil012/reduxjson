@@ -8,6 +8,8 @@ import {
 } from "./action-type";
 import axios from "axios";
 
+const baseUrl = "http://localhost:5000/business"; //I wanted to fetch it from .env, but I was facing problem
+
 export const getBusinesses = (businesses) => {
   return {
     type: GET_BUSINESSES,
@@ -56,7 +58,7 @@ const businessUpdated = () => {
 export const loadBusinesses = () => {
   return function (dispatch) {
     axios
-      .get(`http://localhost:5000/business`)
+      .get(`${baseUrl}`)
       .then((response) => {
         console.log("response", response);
         dispatch(getBusinesses(response.data));
@@ -68,7 +70,7 @@ export const loadBusinesses = () => {
 export const deleteBusiness = (id) => {
   return function (dispatch) {
     axios
-      .delete(`http://localhost:5000/business/${id}`)
+      .delete(`${baseUrl}/${id}`)
       .then((response) => {
         console.log("response", response);
         dispatch(businessDeleted());
@@ -81,7 +83,7 @@ export const deleteBusiness = (id) => {
 export const addBusiness = (business) => {
   return function (dispatch) {
     axios
-      .post(`http://localhost:5000/business`, business)
+      .post(`${baseUrl}`, business)
       .then((response) => {
         console.log("response", response);
         dispatch(businessAdded());
@@ -94,7 +96,7 @@ export const addBusiness = (business) => {
 export const getBusiness = (id) => {
   return function (dispatch) {
     axios
-      .get(`http://localhost:5000/business/${id}`)
+      .get(`${baseUrl}/${id}`)
       .then((response) => {
         console.log("response", response);
         dispatch(getSingleBusiness(response.data));
@@ -106,7 +108,7 @@ export const getBusiness = (id) => {
 export const updateBusiness = (business, id) => {
   return function (dispatch) {
     axios
-      .put(`http://localhost:5000/business/${id}`, business)
+      .put(`${baseUrl}/${id}`, business)
       .then((response) => {
         console.log("response", response);
         dispatch(businessUpdated());
@@ -119,7 +121,7 @@ export const updateBusiness = (business, id) => {
 // export const filterBusinesses = () => {
 //   return function (dispatch) {
 //     axios
-//       .get(`http://localhost:5000/business`)
+//       .get(`${baseUrl}/business`)
 //       .then((response) => {
 //         console.log("response", response);
 //         dispatch(sortedBusinesses());
